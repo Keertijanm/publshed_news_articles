@@ -1,0 +1,72 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	color: white;
+	background-color:hsl(315, 86%, 56%);
+	text-align: center;
+
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.heading {
+	align-items: center;
+	margin-top: 2rem;
+	color: blueviolet;
+}
+
+.post-card {
+	background-color: rgb(76, 31, 210);
+	border: 4px solid hsl(283, 86%, 17%);
+	border-radius: 10px;
+	width: 76%;
+	/* width: calc(33.33% - 30px); */
+	margin: 40px;
+	align-items: center;
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+}
+
+.post-card img {
+	width: 100%;
+	height: auto;
+	display: block;
+	object-fit: cover;
+}
+
+.post-card .post-content {
+	padding: 20px;
+	height: 200px;
+	overflow: hidden;
+}
+
+.post-card h2 {
+	font-size: 24px;
+	margin: 0;
+	color: rgb(0, 255, 213);
+}
+
+.post-card p {
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 10px 0 0 0;
+}
+
+@media only screen and (max-width: 768px) {
+	.post-card {
+		width: calc(50% - 20px);
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.post-card {
+		width: 100%;
+		margin: 20px 0;
+	}
+}
